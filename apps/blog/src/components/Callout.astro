@@ -1,0 +1,18 @@
+---
+interface Props {
+  bgColor?: string;
+  borderRadius?: string;
+  emoji?: string;
+}
+
+const { 
+  bgColor = "bg-gray-100",
+  borderRadius = "rounded-lg",
+  emoji = ""
+} = Astro.props;
+---
+
+<div class={`${bgColor} p-4 ${borderRadius} my-4`}>
+  {emoji && <span class="mr-2">{emoji}</span>}
+  <slot />
+</div> 

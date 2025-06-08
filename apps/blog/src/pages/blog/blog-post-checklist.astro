@@ -1,12 +1,25 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Callout from '../../components/Callout.astro';
+import BlogLayout from '../../layouts/BlogLayout.astro';
 
 const title = "The Ultimate Blog Post Checklist";
 const description = "A comprehensive guide to creating better, more engaging blog posts";
 const pubDate = "2024-03-26";
 ---
 
-<Layout title={title}>
+<BlogLayout
+  title="Blog Post Checklist"
+  date="2024-03-15"
+  description="A comprehensive checklist for creating effective blog posts"
+>
+  <Callout bgColor="bg-blue-100" borderRadius="rounded-xl" emoji="📝">
+    <ol>
+      <li>Every blog post needs more than just good content - it needs proper structure, metadata, and engagement elements.</li>
+      <li>This checklist covers everything from SEO to user engagement to technical improvements.</li>
+      <li>Use this as a living document - add your own items as you learn more about what works for your audience.</li>
+    </ol>
+  </Callout>
+
   <article class="prose prose-lg mx-auto">
     <h1>TLDR:</h1>
     <div class="bg-gray-100 p-4 rounded-lg my-4">
@@ -137,4 +150,4 @@ const pubDate = "2024-03-26";
 
     <p>Remember: The best blog posts are those that provide value to your readers. Use this checklist as a guide, but always prioritize your audience's needs and interests.</p>
   </article>
-</Layout> 
+</BlogLayout> 
