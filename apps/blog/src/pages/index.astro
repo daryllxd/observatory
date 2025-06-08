@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to My Blog">
+	<div class="space-y-16">
+		<!-- Hero Section -->
+		<section class="text-center py-16 bg-white rounded-lg shadow-sm">
+			<h1 class="text-5xl font-bold text-gray-900 mb-4">
+				Welcome to My Blog
+			</h1>
+			<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+				Exploring web development, design, and technology through thoughtful articles and tutorials.
+			</p>
+			<div class="mt-8">
+				<a
+					href="/blog"
+					class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+				>
+					Read the Blog
+				</a>
+			</div>
+		</section>
+
+		<!-- Featured Posts -->
+		<section>
+			<h2 class="text-3xl font-bold text-gray-900 mb-8">Latest Posts</h2>
+			<div class="grid gap-8 md:grid-cols-2">
+				<article class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+					<div class="p-6">
+						<h3 class="text-xl font-semibold text-gray-900 mb-2">
+							<a href="/blog/getting-started-with-astro" class="hover:text-blue-600">
+								Getting Started with Astro
+							</a>
+						</h3>
+						<p class="text-gray-600 mb-4">
+							Learn how to build fast websites with Astro and Tailwind CSS
+						</p>
+						<a
+							href="/blog/getting-started-with-astro"
+							class="text-blue-600 hover:text-blue-800 font-medium"
+						>
+							Read more →
+						</a>
+					</div>
+				</article>
+
+				<article class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+					<div class="p-6">
+						<h3 class="text-xl font-semibold text-gray-900 mb-2">
+							<a href="/blog/why-i-love-tailwind" class="hover:text-blue-600">
+								Why I Love Tailwind CSS
+							</a>
+						</h3>
+						<p class="text-gray-600 mb-4">
+							A deep dive into why Tailwind CSS is my favorite CSS framework
+						</p>
+						<a
+							href="/blog/why-i-love-tailwind"
+							class="text-blue-600 hover:text-blue-800 font-medium"
+						>
+							Read more →
+						</a>
+					</div>
+				</article>
+			</div>
+		</section>
+	</div>
+</Layout>
