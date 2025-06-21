@@ -1,0 +1,9 @@
+name = "blog-analytics"
+main = "src/index.ts"
+compatibility_date = "2022-07-12"
+
+
+[env.staging]
+kv_namespaces = [
+  { binding = "ANALYTICS", id = "fc0d4d517bee4cfd9f45dd6e77b8f36e", preview_id = "fc0d4d517bee4cfd9f45dd6e77b8f36e" }
+] 
