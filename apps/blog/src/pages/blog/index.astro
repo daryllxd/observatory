@@ -3,11 +3,18 @@ import Layout from '../../layouts/Layout.astro';
 
 const posts = [
   {
+    title: "My Weekend",
+    description: "A simple weekend reflection",
+    date: "2025-06-22",
+    slug: "my-weekend",
+    layout: "featured"
+  },
+  {
     title: "The Ultimate Blog Post Checklist",
     description: "A comprehensive guide to creating better, more engaging blog posts",
     date: "2024-03-26",
     slug: "blog-post-checklist",
-    layout: "featured"
+    layout: "default"
   },
   {
     title: "Getting Started with Astro",
@@ -21,7 +28,7 @@ const posts = [
     description: "A deep dive into why Tailwind CSS is my favorite CSS framework",
     date: "2024-03-14",
     slug: "why-i-love-tailwind",
-    layout: "featured"
+    layout: "default"
   }
 ];
 ---
