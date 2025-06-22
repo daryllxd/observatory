@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import FeaturedBlogLayout from '../../layouts/FeaturedBlogLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+// Choose layout based on frontmatter
+const Layout = post.data.layout === 'featured' ? FeaturedBlogLayout : BlogLayout;
+---
+
+<Layout
+  title={post.data.title}
+  date={post.data.date}
+  description={post.data.description}
+>
+  <Content />
+</Layout> 
