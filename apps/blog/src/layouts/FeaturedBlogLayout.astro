@@ -1,3 +1,5 @@
+---
+
 import Layout from './Layout.astro';
 
 interface Props {
@@ -7,6 +9,7 @@ interface Props {
 }
 
 const { title, date, description } = Astro.props;
+---
 
 <Layout title={title} description={description}>
   <article class="max-w-4xl mx-auto">
