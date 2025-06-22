@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Inconsolata:wght@400;500;600&display=swap");
+
 @import "tailwindcss/preflight";
 @import "tailwindcss/theme";
 @import "tailwindcss/utilities";
+
+@theme {
+  --font-sans: "Lato", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Inconsolata", ui-monospace, monospace;
+}
+
+/* Custom typography styles */
+.prose p {
+  @apply mb-4;
+}
+
+.prose p:last-child {
+  margin-bottom: 0; /* Remove margin from last paragraph */
+}
