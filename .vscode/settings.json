@@ -4,7 +4,10 @@
   },
   "[mdx]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "unifiedjs.vscode-mdx"
+    "editor.defaultFormatter": "unifiedjs.vscode-mdx",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never"
+    }
   },
   "files.exclude": {
     "**/content/blog/**/*.mdx": false
