@@ -20,11 +20,6 @@ posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).get
           <div class="p-6">
             <div class="flex items-center text-sm text-gray-500 mb-2">
               <time datetime={post.data.date}>{new Date(post.data.date).toLocaleDateString()}</time>
-              {post.data.layout === 'featured' && (
-                <span class="ml-2 px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full">
-                  Featured
-                </span>
-              )}
             </div>
             <h2 class="text-xl font-semibold text-gray-900 mb-2">
               <a href={`/blog/${post.slug}`} class="hover:text-blue-600">

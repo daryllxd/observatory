@@ -6,7 +6,6 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string(),
     date: z.string(),
-    layout: z.enum(["default", "featured"]).optional().default("default"),
   }),
 });
 
